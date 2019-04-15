@@ -13,7 +13,7 @@ public class Tableroa {
 		bigarrenBidea=new BigarrenBidea();
 		listaJokalariak=new Jokalaria[6];
 	}
-	public Tableroa getTableroa(){
+	public static Tableroa getTableroa(){
 		if(nireTableroa==null){
 			nireTableroa=new Tableroa();
 		}
@@ -26,6 +26,8 @@ public class Tableroa {
 	public void partidaBatJolastu(){
 		int i=0;
 		while(!this.partidaBukatuDa(i)){
+			int jokalariZenb=i+1;
+			System.out.println(jokalariZenb + " jokalariaren txanda");
 			listaJokalariak[i].mugituFitxa();
 			if (this.partidaBukatuDa(i)){
 				String irabazlea=listaJokalariak[i].getKolorea();
@@ -50,7 +52,7 @@ public class Tableroa {
 	}
 	
 	public static void main(String args[]){
-		Tableroa.getNireTableroa().partidaBatJolastu();
+		Tableroa.getTableroa().partidaBatJolastu();
 	}
 	
 }
