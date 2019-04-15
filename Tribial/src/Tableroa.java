@@ -1,3 +1,4 @@
+import proiektua.Tableroa;
 
 public class Tableroa {
 	
@@ -42,6 +43,14 @@ public class Tableroa {
 	
 	public void setJokalariKop(int pJokalariKop){
 		this.jokalariKop=pJokalariKop;
+	}
+	
+	private void partidaHasieratu() {
+		//TODO adibidez ezarri jokalari kop, hasieratu zerrenda guztiak etab
+	}
+	
+	public static void main(String args[]){
+		Tableroa.getNireTableroa().partidaBatJolastu();
 	}
 	
 }
