@@ -40,4 +40,8 @@ public class Tableroa {
 		return listaJokalariak[pIndizea].partidaBukatuDa();
 	}
 	
+	public void setJokalariKop(int pJokalariKop){
+		this.jokalariKop=pJokalariKop;
+	}
+	
 }
